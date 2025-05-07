@@ -1,0 +1,17 @@
+body{
+    background-color: azure;
+    
+}
+
+h1{
+    background-color: aquamarine;
+    font-style: oblique;
+    color: brown;
+}
+
+p{
+    background-color: azure;
+    font-style: italic;
+    font-size: 20px;
+    color: brown;
+}

@@ -1,0 +1,25 @@
+body{
+    background-color: burlywood;
+
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: chocolate;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+}
+
+code{
+    color: blueviolet;
+    
+}

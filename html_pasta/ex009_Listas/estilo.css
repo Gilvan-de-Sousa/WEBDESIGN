@@ -1,0 +1,28 @@
+body{
+    background-color: blanchedalmond
+}
+h1{
+    font-family: cursive;
+    color: brown;
+    font-style: oblique;
+}
+h2{
+    font-family: sans-serif;
+    color: blueviolet;
+    font-style: oblique;
+}
+
+li{
+    color: chocolate;
+}
+
+dt{
+    font-weight: bolder;
+    color: crimson;
+    font-style: normal;
+}
+dd{
+    color: cornflowerblue;
+    font-style: italic;
+    font-size: 20px;
+}

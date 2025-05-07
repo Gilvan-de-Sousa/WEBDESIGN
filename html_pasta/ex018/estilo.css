@@ -1,0 +1,16 @@
+/* Font-Face não funcionou */
+
+@font-face{
+    font-family: 'Angel wish';
+    src: url('fonts/Angel_wish.otf') format('opentype'), url('fonts/Angel_wish.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: fantasy;
+    font-size: 3em;
+}

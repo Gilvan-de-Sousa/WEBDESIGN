@@ -1,0 +1,17 @@
+h1{
+    color: antiquewhite;
+}
+body{
+    background-color: chocolate;
+}
+
+p{
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 20px;
+}
+a{
+    color: blue;
+    font-style: oblique;
+    font-weight: 800;
+}

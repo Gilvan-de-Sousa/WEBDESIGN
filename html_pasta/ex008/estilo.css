@@ -1,0 +1,27 @@
+body{
+    background-color: blanchedalmond;
+}
+
+.titulo{
+    color:brown;
+}
+
+#primeiro_paragrafo{
+    color: rebeccapurple;
+    font-size: 20px;
+}
+
+p{
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+mark{
+    background-color: chocolate;
+}
+
+h2{
+    color: chocolate;
+}

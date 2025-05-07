@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon/html5.ico" type="image/x-icon" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: antiquewhite;
+      }
+      header {
+        width: auto;
+        background-color: whitesmoke;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid greenyellow;
+        box-shadow: 1px 1px 4px 1px rgba(8, 12, 8, 0.158);
+        border-radius: 5px;
+      }
+
+      main {
+        background-color: whitesmoke;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid greenyellow;
+        box-shadow: 1px 1px 4px 1px rgba(8, 12, 8, 0.158);
+        border-radius: 5px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: lightgray;
+        color: gray;
+        padding: 1px;
+        margin: 1px;
+        border: 1px solid greenyellow;
+        box-shadow: 1px 1px 4px 1px rgba(8, 12, 8, 0.158);
+        border-radius: 5px;
+      }
+
+      footer > p {
+        margin: 0px;
+      }
+      nav > a {
+        text-decoration: none;
+        color: gray;
+        font-weight: bold;
+      }
+
+      nav {
+        background-color: lightgreen;
+        padding: 2px;
+        box-shadow: 1px 1px 4px 1px rgba(8, 12, 8, 0.158);
+      }
+
+      article {
+        background-color: antiquewhite;
+        box-shadow: 1px 1px 4px 1px rgba(8, 12, 8, 0.158);
+      }
+
+      article:hover {
+        background-color: lightgray;
+      }
+      nav > a:hover {
+        text-decoration: underline;
+        color: green;
+      }
+
+      footer:hover {
+        color: chocolate;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu Site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="assuntos">Esportes Politica Tecnologia</section>
+      <section id="noticias">
+        <article>
+          <h2>Noticias sobre o Brasil</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            commodi ipsam facilis temporibus libero magnam ut dignissimos atque
+            provident quaerat unde molestiae corrupti dolor possimus esse
+            architecto optio, nemo quidem!
+          </p>
+          <aside>
+            <p>Artigo escrito por Anonimo</p>
+          </aside>
+        </article>
+
+        <article></article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Desenvolvido por: Curso em Vídeo</p>
+    </footer>
+  </body>
+</html>

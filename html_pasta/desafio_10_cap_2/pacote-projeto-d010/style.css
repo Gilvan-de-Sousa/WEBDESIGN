@@ -76,12 +76,12 @@ header > p {
     font-size: 1.2em;
     padding-right: 10px;
     padding-left: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 30px;
     max-width: 500px;
     margin: auto;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.671);
 }
-
+s
 header > h1 {
     margin-bottom: 30px;
     font-size: 3em;

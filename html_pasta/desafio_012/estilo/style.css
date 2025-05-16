@@ -48,10 +48,16 @@ header a, footer a {
     font-weight: bolder;
 }
 
-header a:hover, footer a:hover {
+header a:hover {
     color: burlywood;
     text-decoration: underline;
     font-size: 5vw;
+}
+
+footer a:hover {
+    color: burlywood;
+    text-decoration: underline;
+    font-size: larger;
 }
 
 section {

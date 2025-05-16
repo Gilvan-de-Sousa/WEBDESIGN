@@ -51,7 +51,7 @@ header a, footer a {
 header a:hover, footer a:hover {
     color: burlywood;
     text-decoration: underline;
-    font-size: large;
+    font-size: 5vw;
 }
 
 section {
@@ -63,6 +63,10 @@ section {
     font-size: 2vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 .normal {
     background-color: white;
     color: black;
@@ -71,12 +75,26 @@ section {
 .imagem {
     background-color: rgb(22, 20, 20);
     color: white;
+    background-size: cover;        
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.596);
+}
+
+section#img01 {
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;  
+}
+
+section#img02 {
+    background-image: url("../imagens/background002.jpg");
+    background-position: right center;
 }
 
 section.imagem > p {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.74);
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {

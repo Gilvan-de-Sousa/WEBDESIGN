@@ -12,16 +12,46 @@
             background-color: bisque;
         }
 
+        h1 {
+            text-align: center;
+        }
+
+        header {
+            background-color: chocolate;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        caption {
+            padding: 5px;
+            margin-top: 20px;
+            background-color: lightgray;
+            font-weight: bolder;
+        }
+
         table {
             width: 500px;
             text-align: center;
             border-collapse: collapse;
             background-color: white;
+            margin: auto;
+            position: relative;
         }
 
         thead {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+            font-weight: bold;
         }
        
         td, th {
@@ -38,10 +68,21 @@
             background-color: gray;
             color: white;
         }
+        div {
+            text-align: justify;
+            padding: 10px;
+            text-indent: 30px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.2em;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Uso de Tabelas Grandes</h1>
+    <header>
+        <h1>Uso de Tabelas Grandes</h1>
+    </header>
 
     <!--
         Anatomia para tabelas grandes
@@ -59,10 +100,11 @@
         </tfoot>
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População 2024</th>
-            <th>População 2022</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População 2024</th>
+            <th scope="col">População 2022</th>
         </thead>
 
         <tbody>
@@ -177,12 +219,19 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">212 583 750</td>
                 <td class="num">203 080 756</td>
             </tr>
         </tfoot>
     </table>
 
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum commodi quod vel deleniti nemo libero quis rem delectus quasi earum sint expedita reprehenderit blanditiis autem praesentium, aperiam, dignissimos modi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo, velit ipsa maxime aut distinctio minus tempora, vitae aperiam recusandae excepturi iste dolorem dolore laudantium alias est iure vero labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate quasi ab ut ad laudantium non vel, sit, ipsa quam animi quisquam dolore nam labore dolores placeat ex magnam saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores delectus deleniti, recusandae, quia necessitatibus sequi commodi eum architecto accusamus unde dolor voluptatibus? Mollitia quo, delectus quis facilis inventore nobis ipsa.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum commodi quod vel deleniti nemo libero quis rem delectus quasi earum sint expedita reprehenderit blanditiis autem praesentium, aperiam, dignissimos modi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo, velit ipsa maxime aut distinctio minus tempora, vitae aperiam recusandae excepturi iste dolorem dolore laudantium alias est iure vero labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate quasi ab ut ad laudantium non vel, sit, ipsa quam animi quisquam dolore nam labore dolores placeat ex magnam saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores delectus deleniti, recusandae, quia necessitatibus sequi commodi eum architecto accusamus unde dolor voluptatibus? Mollitia quo, delectus quis facilis inventore nobis ipsa.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum commodi quod vel deleniti nemo libero quis rem delectus quasi earum sint expedita reprehenderit blanditiis autem praesentium, aperiam, dignissimos modi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo, velit ipsa maxime aut distinctio minus tempora, vitae aperiam recusandae excepturi iste dolorem dolore laudantium alias est iure vero labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate quasi ab ut ad laudantium non vel, sit, ipsa quam animi quisquam dolore nam labore dolores placeat ex magnam saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores delectus deleniti, recusandae, quia necessitatibus sequi commodi eum architecto accusamus unde dolor voluptatibus? Mollitia quo, delectus quis facilis inventore nobis ipsa.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum commodi quod vel deleniti nemo libero quis rem delectus quasi earum sint expedita reprehenderit blanditiis autem praesentium, aperiam, dignissimos modi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo, velit ipsa maxime aut distinctio minus tempora, vitae aperiam recusandae excepturi iste dolorem dolore laudantium alias est iure vero labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate quasi ab ut ad laudantium non vel, sit, ipsa quam animi quisquam dolore nam labore dolores placeat ex magnam saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores delectus deleniti, recusandae, quia necessitatibus sequi commodi eum architecto accusamus unde dolor voluptatibus? Mollitia quo, delectus quis facilis inventore nobis ipsa.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum commodi quod vel deleniti nemo libero quis rem delectus quasi earum sint expedita reprehenderit blanditiis autem praesentium, aperiam, dignissimos modi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo, velit ipsa maxime aut distinctio minus tempora, vitae aperiam recusandae excepturi iste dolorem dolore laudantium alias est iure vero labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate quasi ab ut ad laudantium non vel, sit, ipsa quam animi quisquam dolore nam labore dolores placeat ex magnam saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores delectus deleniti, recusandae, quia necessitatibus sequi commodi eum architecto accusamus unde dolor voluptatibus? Mollitia quo, delectus quis facilis inventore nobis ipsa.</p>
+    </div>
 </body>
 </html>

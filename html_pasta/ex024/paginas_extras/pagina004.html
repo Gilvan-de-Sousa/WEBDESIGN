@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon/html5.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: bisque;
+            font-size: 1.2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+        }
+
+        h1 {
+            padding: 15px;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        .cadastro:hover {
+            background-color: aqua;
+            font-weight: bold;
+        }
+    </style>
+
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="cadastro.php" method="get">
+        <p>Nome:
+            <input type="text" name="nome" id="nome" placeholder="nome completo">
+            <input class="cadastro" type="submit" value="Cadastrar">
+        </p>
+        
+    </form>
+</body>
+</html>

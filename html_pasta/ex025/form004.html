@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/html5.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: beige;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1.2em;
+        }
+         h1 {
+            text-align: center;
+            padding: 20px;
+         }
+
+         form {
+            width: 500px;
+            margin-left: 35.4%;
+         }
+
+         fieldset {
+            background-color: antiquewhite;
+         }
+
+         fieldset:hover {
+            background-color: blanchedalmond;
+         }
+    </style>
+
+    <title>Formulário 4</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados de Usuário</legend>
+            <p>
+                <label for="imail">E-mail:</label>
+                <input type="email" name="mail" id="imail" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="mobile" required pattern="^[0-9]{4}-[0-9]{4}$">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/html5.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: rgba(185, 93, 231, 0.705);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2em;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        form {
+            background-color: white;
+            width: 480px;
+            padding: 10px;
+            margin-left: 30%;
+        }
+    </style>
+
+    <title>Formulário 8</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php">
+
+        <p>
+            <label for="in1">Número 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="10" value="0" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="fin2">Número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="10" value="0" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

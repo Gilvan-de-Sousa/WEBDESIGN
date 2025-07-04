@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../favicon/html5.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon/html5.ico" type="image/x-icon" />
 
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+      body {
+        background-color: burlywood;
+      }
+      main {
+        background-color: aquamarine;
+        height: 300px;
+        width: 100vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
 
-        body {
-            background-color: burlywood;
-        }
-        div.conteiner {
-            background-color: antiquewhite;
-            display: flex;
-        }
-        
-        div.item {
-            background-color: lightskyblue;
-            border: 1px solid black;
-            text-align: center;
-            flex: auto;
-        }
+      }
 
+      section {
+        background-color: rgb(9, 177, 177);
+        width: 200px;
+        height: 200px;
+      }
     </style>
 
-    <title>Flexible Box</title>
-</head>
-<body>
-    <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
-</body>
+    <title>Flexible Box Centralizado</title>
+  </head>
+  <body>
+    <main>
+        <section>
+            <h1>Tela de Login</h1>
+        </section>
+    </main>
+  </body>
 </html>

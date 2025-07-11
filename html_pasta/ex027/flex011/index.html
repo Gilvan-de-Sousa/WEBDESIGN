@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon/html5.ico" type="image/x-icon">
 
+    <!-- 
+        flex-basis: 150px; flex-grow: 0; flex-shrink:1
+        flex-basis: 150px; flex-grow: 2; flex-shrink:0
+        flex-basis: 150px; flex-grow: 1; flex-shrink:2
+    -->
+
     <style>
 
         body {
@@ -13,13 +19,29 @@
         div.conteiner {
             background-color: antiquewhite;
             display: flex;
+            flex-flow: row nowrap;
         }
         
         div.item {
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            flex-basis: 200px;
+        }
+
+        div#caixaA {
+            flex-grow: 0; 
+            flex-shrink:1
+        }
+
+        div#caixaB {
+            flex-grow: 2; 
+            flex-shrink:0
+        }
+
+        div#caixaC { 
+            flex-grow: 1; 
+            flex-shrink:2
         }
 
     </style>
@@ -28,13 +50,9 @@
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" id="caixaA">A</div>
+        <div class="item" id="caixaB">B</div>
+        <div class="item" id="caixaC">C</div>
     </div>
 </body>
 </html>

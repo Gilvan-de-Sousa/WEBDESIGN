@@ -41,14 +41,13 @@ header nav a:hover {
 }
 
 header > h1{
-    border: 1px solid black;
     text-align: left;
     padding: 10px;
     flex: 0 0 200px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
 }
 
 header > nav {
-    border: 1px solid black;
     padding: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -71,4 +70,6 @@ main h2 {
 }
 p {
     text-indent: 20px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.178);
+    text-align: justify;
 }

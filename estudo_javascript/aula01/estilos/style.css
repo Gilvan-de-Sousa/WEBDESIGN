@@ -7,17 +7,22 @@
 }
 
 body {
-    background-color: aquamarine;
+    background-color: brown;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
     text-align: justify;
+    transition: 0.5s;
+    
 }
 h1 {
     font-size: 1.2em;
+    margin: 20px;
 }
 
 p {
     font: bold;
     color: white;
     text-align: justify;
+    text-indent: 20px;
+    padding: 20px;
 }

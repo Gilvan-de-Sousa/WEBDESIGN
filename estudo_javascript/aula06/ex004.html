@@ -8,7 +8,7 @@
     <title>JavaScript - Aula 05</title>
 </head>
 <body>
-    <h1>Váriáveis e Tipos Primitivos</h1>
+    <h1>Tratamento de Dados</h1>
     <h2>JavaScript</h2>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae nulla iusto est molestias quam in? Asperiores illo assumenda rem, nulla harum est voluptatibus iure debitis ea officia? Consequatur, eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique animi dolor vero quisquam perferendis accusantium quasi eius quis temporibus! Veniam itaque harum eius temporibus ex neque, impedit esse atque quod?</p>
@@ -17,6 +17,13 @@
 
 
     
-    <script src="aula05.js"></script>
+    <script>
+        var nome = window.prompt("Qual o seu nome? ")
+        document.writeln(`Seu nome tem ${nome.length} letras!`)
+        document.writeln(`${nome}, o seu nome em maiuscula fica ${nome.toLocaleUpperCase()}!`)
+
+        //Representar na moeda local. Ex:
+        // n1.toLocaleString(´pt-BR´), (Style: 'currency: 'BRL)
+    </script>
 </body>
 </html>

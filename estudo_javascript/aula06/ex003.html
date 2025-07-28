@@ -8,7 +8,7 @@
     <title>JavaScript - Aula 05</title>
 </head>
 <body>
-    <h1>Váriáveis e Tipos Primitivos</h1>
+    <h1>Tratamento de Dados</h1>
     <h2>JavaScript</h2>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae nulla iusto est molestias quam in? Asperiores illo assumenda rem, nulla harum est voluptatibus iure debitis ea officia? Consequatur, eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique animi dolor vero quisquam perferendis accusantium quasi eius quis temporibus! Veniam itaque harum eius temporibus ex neque, impedit esse atque quod?</p>
@@ -17,6 +17,18 @@
 
 
     
-    <script src="aula05.js"></script>
+    <script>
+        var n1 = Number.parseInt(window.prompt("Digite o primeiro número: "))
+        var n2 = Number.parseInt(window.prompt("Digite o segundo valor: "))
+
+        //Nova forma seria apenas: Number(n1), Numer(n2) e o sistema já converte para int ou float automaticamente...
+        //Converter para String: String(n) ou n.toString()
+        var soma = n1 + n2
+        window.alert(`A soma dos ${n1} + ${n2} é: ${soma}`)
+
+        //Template string
+        //var s = "JavaScript"
+        //window.alert(`Eu estou aprendendo ${s}`)
+    </script>
 </body>
 </html>

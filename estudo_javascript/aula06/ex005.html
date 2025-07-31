@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="favicon/favicon.ico">
+    <title>DOM - Document Object Model</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: blanchedalmond;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: justify;
+            padding: 20px;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos Com DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div name="msg" id="msg">Clique Aqui</div>
+
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        //var d = window.document.getElementsByName('msg')[0]
+        var d = window.document.querySelector('div#msg')
+
+        d.style.background="lightblue"
+        //d.innerText="Estou mudando o texto"
+        
+        //window.document.writeln("Está escrito assim: ", p1.innerText)
+        //window.alert("Está escrito assim: ", p1.innerHTML)
+
+        //corpo.style.backgroundColor="black"
+        //corpo.style.color="white"
+    </script>
+</body>
+</html>

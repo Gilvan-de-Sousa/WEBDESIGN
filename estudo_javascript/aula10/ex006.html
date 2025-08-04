@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Eventos DOM</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.2em;
+            background-color: coral;
+        }
+        div#area {
+            font: normal 15pt Arial;
+            padding: 10px;
+            background-color: lightgreen;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja
+    </div>
+
+    <script>
+            var a = window.document.getElementById("area") // causa problema de uso de memória
+
+            a.addEventListener('click', clicar)
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText = "Clicou"
+            a.style.backgroundColor = "pink"
+            a.style.color = "brown"
+        }
+
+        function entrar(){
+            a.innerText = "Entrou!"
+            a.style.backgroundColor = "blue"
+            a.style.color = "white"
+        }
+
+        function sair(){
+            a.innerText = "Saiu!"
+            a.style.backgroundColor = "lightblue"
+            a.style.color = "black"
+        }
+    </script>
+</body>
+</html>

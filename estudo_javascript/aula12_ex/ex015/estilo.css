@@ -25,13 +25,19 @@ section {
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.644);
 }
+
 div {
+    text-align: left;
     align-items: center;
+    /* background-color: aquamarine; */
+    /* padding: 20px; */
+}
+div#res {
     text-align: center;
 }
-
-img {
-    margin: auto;
+p {
+    line-height: 1.2em;
+    padding: 10px;
 }
 
 footer {

@@ -6,3 +6,10 @@
 
 # fruits = ("apple", "banana", "cherry")
 # print(fruits[-2])
+
+def msg(n1, n2):
+    soma = n1 + n2
+    print(soma)
+    
+    
+msg(2, 3)

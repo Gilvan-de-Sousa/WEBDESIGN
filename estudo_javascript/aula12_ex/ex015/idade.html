@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Modelo - Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <label for="txtano">Ano de Nascimento: </label><input type="number" name="txtano" id="txtano">
+
+            <p>Sexo: <label for="masc">Masculino</label><input type="radio" name="radsex" id="masc" checked>
+            <label for="fem">Feminino</label><input type="radio" name="radsex" id="fem">
+            </p>
+            
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+            
+        <div id="res">
+            <img src="baby_girl.png" alt="fotografia" id="photo">
+            <p>Preencha os dados acima para ver o resultado</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Praticas Curso em Vídeo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

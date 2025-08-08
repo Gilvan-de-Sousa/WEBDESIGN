@@ -1,14 +1,18 @@
 function tabuada()
 {
-    var tab = Number(document.getElementById("txtnumero").value)
+    var numero = Number(document.getElementById("txtnumero").value)
     var msg = window.document.getElementById("msg")
 
     msg.innerHTML = ""
-    for(let i = 0; i <= 10; i++){
-        var res = tab * i
-        msg.innerHTML += `${tab} x ${i} = ${res} <br>`
+    if(numero == 0){
+        alert("Informe um valor válido!")
+    }else {
+        for(let i = 0; i <= 10; i++){
+        var res = numero * i
+        msg.innerHTML += `${numero} x ${i} = ${res} <br>`
         window.document.body.style.backgroundColor="lightgreen"
+        }
     }
-    
+     
 }
 

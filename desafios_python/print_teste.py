@@ -1,15 +1,29 @@
-# print('Hello World!')
+class Veiculo():
+    def __init__(self, modelo, cor):
+        self.modelo = modelo
+        self.cor = cor
+        
+    def mostrarCarro(self):
+        print(f"Veiculo Modelo: {self.modelo}\nCor: {self.cor}")
+        
+carro1 = Veiculo("Vectra", "Vermelho")
+carro2 = Veiculo("Twingo", "Prata")
 
-# num = int(input("Informe um valor: "))
+carro1.mostrarCarro()
+print("")
+carro2.mostrarCarro()
 
-# print(f"O valor informado foi {num}")
-
-# fruits = ("apple", "banana", "cherry")
-# print(fruits[-2])
-
-def msg(n1, n2):
-    soma = n1 + n2
-    print(soma)
+class Passaro():
+    def __init__(self, tipo, cor):
+        self.tipo = tipo
+        self.cor = cor
     
-    
-msg(2, 3)
+    def cantar(self):
+        print(f"Passaro: {self.tipo}\nCor: {self.cor}")
+        
+ave1 = Passaro("João de Barro", "Avermelhado")
+ave2 = Passaro("Sabiá", "Preto, Alaranjado e Amarelo")
+
+print("")
+ave1.cantar()
+ave2.cantar()

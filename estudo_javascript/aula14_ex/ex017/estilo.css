@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: normal;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+div#msg {
+    margin-top: 10px;
+    padding: 20px;
+    width: 200px;
+    border: 2px solid rgba(129, 202, 129, 0.432);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.548);
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.644);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}

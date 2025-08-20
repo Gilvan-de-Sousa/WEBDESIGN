@@ -7,14 +7,48 @@
 
 body {
     background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    margin: 3px 3px;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
 }
 
 input {
     margin: 5px;
-    width: 200px;
+}
+
+input#fem {
+    width: 10px;
+}
+input#masc{
+    width: 30px;
+}
+
+input#outros{
+    width: 30px;
 }
 
 input:hover {
     background-color: burlywood;
     color: black;
+}
+
+div {
+    align-items: center;
+    margin: auto;
+    text-align: left;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
+    background-color: azure;
+}
+
+fieldset:hover {
+    background-color: rgb(250, 220, 180);
 }

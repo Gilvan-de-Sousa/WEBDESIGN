@@ -9,21 +9,58 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="" method="get">
-        <label for="txnome">Nome: </label><input type="text" name="txnome" id="txnome" placeholder="nome">
-        <br>
-        <label for="txmail">E-mail: </label><input type="email" name="txmail" id="txmail" placeholder="@mail">
-        <br>
-        <!-- Gênero -->
-         <label for="genero">Gênero</label>
-        <input type="radio" name="gene" id="genero">Feminino
-        <input type="radio" name="genMas" id="genero">
-        <br>
-        <label for="txtexto">Campo de Comentários</label>
-        <textarea name="txtexto" id="txtexto" placeholder="deixe o seu comentário"></textarea>
+    <div>
+        <form action="../processa.html" method="get">
+            <fieldset><legend>Pessoa</legend>
+                <label for="txnome">Nome: </label><input type="text" name="txnome" id="txnome" placeholder="nome">
+                <br>
+                <label for="txmail">E-mail: </label><input type="email" name="txmail" id="txmail" placeholder="@mail">
+                <br>
+            </fieldset>
+            <!-- Gênero -->
+            <fieldset><legend>Gênero</legend>
+                
+                <label for="fem">Feminino</label>
+                <input type="radio" name="gene" id="fem">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="gene" id="masc" checked>
+                <label for="outros">Outros</label>
+                <input type="radio" name="gene" id="outros" checked>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset><legend>Estilo musical</legend>
+                
+                <input type="checkbox" name="estilo" id="mpb" value="mpb"><label for="mpb">MPB</label>
+                <input type="checkbox" name="estilo" id="rock" value="rock"><label for="rock">Rock</label>
+                <input type="checkbox" name="estilo" id="bossa" value="bossa"><label for="bossa">Bossa Nova</label>
+                <input type="checkbox" name="estilo" id="sertanejo" value="sertanejo"><label for="sertanejo">Sertanejo</label>
+                <input type="checkbox" name="estilo" id="pop" value="pop"><label for="pop">POP</label>
+            </fieldset>
+            <br>
+            <br>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="">----Selecionar----</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="pr">Paraná</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="sc">Santa Catarina</option>
+            </select>
+            <br>
+            <br>
 
-        <br>
-        <input type="button" value="Enviar">
-    </form>
+            <label for="arquivo">Upload de Arquivos:</label><input type="file" name="arquivo" id="arquivo">
+            <br>
+            <br>
+            <p>
+                <label for="txtexto">Campo de Comentários</label>
+                <textarea name="txtexto" id="txtexto" placeholder="deixe o seu comentário"></textarea>
+            </p>
+            <br>
+            <input type="button" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>

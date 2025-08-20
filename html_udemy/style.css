@@ -1,0 +1,20 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+input {
+    margin: 5px;
+    width: 200px;
+}
+
+input:hover {
+    background-color: burlywood;
+    color: black;
+}

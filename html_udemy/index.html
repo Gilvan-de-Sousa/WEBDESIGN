@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/html5.ico" type="image/x-icon">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Formulário</title>
 </head>
 <body>
-    
+
+    <!-- <form action="processa.html" method="post"> -->
+    <h1>Formulários</h1>
+    <div>
+        <form action="processa.html">
+            <label for="txnome">Nome:</label><input type="text" name="txnome" id="txnome" placeholder="informe o seu nome">
+            <br>
+            <label for="txmail">E-mail:</label><input type="email" name="txmail" id="txmail" placeholder="e-mail">
+            <br>
+            <label for="txsenha">Senha:</label><input type="password" name="txsenha" id="txsenha" placeholder="password">
+            <br>
+
+            <label for="txtexto">Area de texto</label><textarea name="txtexto" id="txtexto" placeholder="Digite um comentário"></textarea>
+
+            <!-- <input type="button" value="Enviar Cadastro"> -->
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>

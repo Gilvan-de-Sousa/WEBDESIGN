@@ -10,6 +10,10 @@ body {
     background-color: antiquewhite;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2em;
+    margin: 10px;
+    /* line-height: 1.2em; */
+    padding: 10px;
+    text-align: justify;
 }
 
 span {

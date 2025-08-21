@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        caption{
+            background-color: black;
+            color: white;
+        }
+
+        thead{
+            background-color: darkorange;
+            color: white;
+        }
+
+        tbody{
+               background-color: honeydew;
+        }
+
+        tfoot{
+            background-color: grey;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Mais sobre tabelas</h1>
+    <!--
+        caption -> Legenda / título da tabela
+        thead -> Table Header (cabeçalho da tabela)
+        tbody -> Table Body (corpo da tabela)
+        tfoot -> Table Footer (rodapé da tabela)
+    -->
+    <table border="1">
+        <caption>Listagem de produtos</caption>
+        
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td>1</td>
+                <td>R$ 2000</td>
+            </tr>
+            <tr>
+                <td>Tablet</td>
+                <td>2</td>
+                <td>R$ 1000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="2">R$ 4000</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+a:hover {
+    
+    color: black;
+}

@@ -44,23 +44,29 @@
             background-color: orange;
         }
 
+        li > a {
+            color: brown;
+            text-decoration: none;
+        }
+
+        div h1 {
+            background-color: orange;
+        }
+
         
     </style>
 </head>
 <body>
-    <div style="border: 1px solid black;">
-        <h1 class="destaque titulo">Título da página</h1>
-        <span style="background-color: grey;">
-            <h1 class="destaque titulo">Título da página</h1>
+    <div style="border: 1px solid black;"><!--  pai -->
+        <h1 class="destaque titulo">Título da página</h1><!-- filho -->
+        <span style="background-color: grey;"><!-- filho -->
+            <h1 class="destaque titulo">Título da página</h1><!--  pai -->
         </span>
     </div>
 
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Sobre</a></li>
     </ul>
     
     <h2>Subtítulo da página</h2>

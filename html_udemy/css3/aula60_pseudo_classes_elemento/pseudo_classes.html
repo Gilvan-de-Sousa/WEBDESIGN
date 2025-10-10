@@ -6,6 +6,10 @@
     <title>Pseudo-Classes e Pseudo-Elementos</title>
 
     <style>
+        /*body {
+            font-size: 1.2em;
+        }
+
         div:hover {
             background-color: purple;
             color: white;
@@ -21,12 +25,55 @@
             color: white;
             text-decoration: none;
         }
+            */
+        
+        a, a:link {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.4em;
+            color: green;
+            padding: 0.5em 1em;
+        }
+
+        /*links não visitados
+        a:link {
+            color: lemonchiffon;
+        }
+            */
+
+        /*Links visitados
+        a:visited {
+            color: red;
+        }
+        */
+
+        a:hover {
+            background-color: green;
+            color: white;
+        }
+
+        /*Ao clicar muda a cor 
+        a:active {
+            background-color: purple;
+        }
+            */
     </style>
 </head>
 <body>
     <div><p>Conteúdo da DIV</p></div>
 
     <h2>Conteúdo do H2</h2>
-    <a href="">Google</a>
+    <a href="http://www.google.com/" target="_blank" rel="noopener">Google </a>|
+    <a href="http://www.facebook.com/" target="_blank" rel="noopener">Facebook </a>|
+    <a href="http://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+
+    <h2>Formulários</h2>
+    <input type="checkbox"><label for="">Aceito</label>
+    <br>
+
+    <input type="radio" name="opcao" id="" ><label for="">Sim</label>
+    <input type="radio" name="opcao" id=""><label for="">Não</label>
+    <br>
+    <input type="text" placeholder="caixa de texto" required>
 </body>
 </html>

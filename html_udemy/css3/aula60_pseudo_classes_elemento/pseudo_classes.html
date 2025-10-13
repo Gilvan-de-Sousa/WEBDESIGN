@@ -57,12 +57,43 @@
             background-color: purple;
         }
             */
+
+        input:checked {
+            margin-left: 20px;
+        }
+
+        input:focus {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        input:required {
+            border: 2px solid red;
+        }
+        /*
+        p::first-line {
+            color: red;
+        } */
+
+        p::first-letter {
+            color: blue;
+            font-size: 30px;
+        }
+
+        p::selection {
+            color: darkgreen;
+            background-color: blanchedalmond;
+        }
+
     </style>
 </head>
 <body>
-    <div><p>Conteúdo da DIV</p></div>
+    <div>Conteúdo da DIV</div>
 
     <h2>Conteúdo do H2</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit temporibus unde, dolore praesentium aspernatur quaerat. Labore in ullam pariatur ipsam dolorum libero eum? Vero error et recusandae incidunt dolorem adipisci.</p>
+
     <a href="http://www.google.com/" target="_blank" rel="noopener">Google </a>|
     <a href="http://www.facebook.com/" target="_blank" rel="noopener">Facebook </a>|
     <a href="http://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>

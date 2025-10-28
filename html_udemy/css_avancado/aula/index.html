@@ -7,27 +7,86 @@
 
     <style>
         body {
+            background-color: rgb(242, 155, 242);
+        }
+
+        #container {
+            width: 700px;
+            background-color: aliceblue;
+            margin: 10px auto;
+            padding: 8px;
+            position: relative;
+            border: 1px solid greenyellow;
+        }
+        .borda {
             border: 1px solid red;
         }
 
-        h1 {
-            border: 1px solid green;
+        .estatica { /*define o fluxo normal*/
+            position: static;
         }
 
-        p {
-            border: 1px solid blue;
+        .relativa {
+            position: relative;
+            /*margin-top: 40px;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 30px;
+            */
+            
         }
+
+        .absoluta {
+            position: absolute;
+            /* top: 10px;
+            left: 0; 
+            bottom: 0;
+            right: 0;
+            */
+            width: 500px;
+            margin: 0;
+        }
+
+        .fixa {
+            position: fixed;
+            width: 200px;
+            height: 120px;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+        }
+        
     </style>
 </head>
 <body>
 
-    <h1>Titulo 1</h1>
-    
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam et ab, sed beatae ut aliquam sint temporibus, fuga repudiandae veritatis vel eum ducimus perspiciatis vero, nam magnam expedita necessitatibus alias?</p>
-    
-    
-    
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit beatae dignissimos hic ex eveniet maxime non, vero libero ullam tempora aliquid dolorem omnis? Eos unde voluptatem reprehenderit. Impedit, voluptates quae?</p>
-    
+    <div id="container">
+
+        <div class="fixa" style="background-color: aquamarine;">
+            <h3>CHAT</h3>
+            <button>Enviar mensagem</button>
+        </div>
+
+        <h1 class="borda">Posição absoluta</h1>
+
+        <p class="borda absoluta" style="background-color: lightpink;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam et ab, sed beatae ut aliquam sint temporibus, fuga repudiandae veritatis vel eum ducimus perspiciatis vero, nam magnam expedita necessitatibus alias?</p>
+
+        <p class="borda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit beatae dignissimos hic ex eveniet maxime non, vero libero ullam tempora aliquid dolorem omnis? Eos unde voluptatem reprehenderit. Impedit, voluptates quae?</p>
+
+        <hr>
+        <h1 class="borda">Posição relativa</h1>
+
+        <p class="borda relativa" style="background-color: lime;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam et ab, sed beatae ut aliquam sint temporibus, fuga repudiandae veritatis vel eum ducimus perspiciatis vero, nam magnam expedita necessitatibus alias?</p>
+
+        <p class="borda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit beatae dignissimos hic ex eveniet maxime non, vero libero ullam tempora aliquid dolorem omnis? Eos unde voluptatem reprehenderit. Impedit, voluptates quae?</p>
+
+        <h1 class="borda estatica">Fluxo normal</h1>
+
+        <p class="borda estatica">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam et ab, sed beatae ut aliquam sint temporibus, fuga repudiandae veritatis vel eum ducimus perspiciatis vero, nam magnam expedita necessitatibus alias?</p>
+
+        <p class="borda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit beatae dignissimos hic ex eveniet maxime non, vero libero ullam tempora aliquid dolorem omnis? Eos unde voluptatem reprehenderit. Impedit, voluptates quae?</p>
+    </div>
+
 </body>
 </html>

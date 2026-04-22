@@ -23,18 +23,25 @@ escolha = int(input(("Escolha uma operação:\n[1]Multiplicação\n[2]Divisão\n
 print("-------------------xxxxxxxxxxxxxxxxxxxx-------------------")
 print(" ")
 
-a = int(input("Informe o 1º valor: "))
-b = int(input("Informe o 2º valor: "))
-
 calc = Calculadora()
 if escolha == 1:
+    a = int(input("Informe o 1º valor: "))
+    b = int(input("Informe o 2º valor: "))
     print(calc.mult(a, b))
+    
 elif escolha == 2:
+    a = int(input("Informe o 1º valor: "))
+    b = int(input("Informe o 2º valor: "))
     print(calc.div(a, b))
     
 elif escolha == 3:
+    a = int(input("Informe o 1º valor: "))
+    b = int(input("Informe o 2º valor: "))
     print(calc.soma(a, b))
+    
 elif escolha == 4:
+    a = int(input("Informe o 1º valor: "))
+    b = int(input("Informe o 2º valor: "))
     print(calc.subt(a, b))
     
 else:

@@ -1,17 +1,20 @@
+# Declaração de Classe:
+
 class Gafanhoto:
     def __init__(self):
-        # atributos de instância
+    # atributos de instância
         
         self.nome = ""
         self.idade = 0
         
-        # Métodos de instância
+    # Métodos de instância
     def aniversario(self):
         self.idade = self.idade + 1
         
     def mensagem(self):
         return f"{self.nome} é gafanhoto(a) e tem {self.idade} anos de idade."
     
+# Declaração dos Objetos:
 
 g1 = Gafanhoto()
 
@@ -28,4 +31,10 @@ g2.nome = "Mauro"
 g2.idade = 15
 
 print(g2.mensagem())
+
+g3 = Gafanhoto()
+
+g3.idade = 14
+
+print(g3.mensagem())
 

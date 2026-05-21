@@ -1,3 +1,5 @@
+from rich import inspect
+
 class ContaBancaria:
     """Criar uma conta bancária que permite fazer saques e depósitos"""
     
@@ -26,12 +28,16 @@ class ContaBancaria:
 # Criação e Uso de Objeto:
  
 c1 = ContaBancaria(112, "Gustavo",  5400)
-c1.depositar(500)
+c1.depositar(5000)
 
 print(c1)
 
-c1.sacar(10000)
+c1.sacar(1000)
 
 print("")
 print(c1)
 print("")
+
+c2 = ContaBancaria(111, "José", 500)
+
+inspect(c2)
